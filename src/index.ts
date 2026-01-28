@@ -558,8 +558,8 @@ class WebSearchMCPServer {
         }
       });
       
-      app.listen(port, '127.0.0.1', () => {
-        console.log(`Web Search MCP Server (HTTP) started on http://127.0.0.1:${port}/mcp`);
+      app.listen(port, '0.0.0.0', () => {
+        console.log(`Web Search MCP Server (HTTP) started on http://0.0.0.0:${port}/mcp`);
         console.log('Server timestamp:', new Date().toISOString());
         console.log('Available tools: full-web-search, get-web-search-summaries, get-single-web-page-content');
         console.log('Waiting for MCP HTTP requests...');
